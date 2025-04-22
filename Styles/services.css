@@ -1,0 +1,244 @@
+.image-hero {
+    position: relative;
+    width: 110%;
+    bottom: 30px;
+    left: -5%;
+    height: 83vh;
+    background: url('../Images/ServicesTitlePageIMG.svg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: #009fe2 0px 0px 20px 0px;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .image-overlay h1 {
+    font-size: 3rem;
+
+    color: rgb(0, 0, 0)
+  }
+  
+  .image-overlay p {
+    font-size: 2rem;
+    margin-bottom: 500px;
+    color: rgb(0, 0, 0);
+
+  }
+  
+
+  /* Footer */
+  .site-footer {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 16px #009fe2;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .footer-link {
+    background: none;
+    border: none;
+    color: #0077cc;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #004f88;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons img {
+    width: 26px;
+    height: 26px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .info-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .info-panel.hidden {
+    display: none;
+  }
+  
+  .info-panel-content {
+    background: #fff;
+    padding: 40px;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    text-align: left;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .services-description {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .services-description h2 {
+    font-size: 2rem;
+    color: #009fe2;
+    margin-bottom: 10px;
+  }
+  
+  .services-list {
+    columns: 2;
+    column-gap: 60px;
+    margin-top: 20px;
+  }
+  
+  .services-list p {
+    margin: 6px 0;
+  }
+  
+  .maintenance-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    color: #333;
+  }
+  
+  .maintenance-section h2 {
+    font-size: 2rem;
+    color: #009fe2;
+    margin-bottom: 20px;
+  }
+  
+  .maintenance-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .services-grid ul {
+    flex: 1;
+    min-width: 250px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .services-grid li {
+    padding: 6px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .video-hover-item {
+    position: relative;
+  }
+  
+  .video-preview {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Adjust to your layout */
+    z-index: 10;
+    width: 800px;
+    height: 450px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .video-hover-item:hover .video-preview {
+    display: block;
+  }
+  
+  .video-preview video {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .scroll-down-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #009fe2;
+    font-family: 'Fjalla One', sans-serif;
+    animation: fadeIn 2s ease forwards;
+    z-index: 2;
+  }
+  
+  .scroll-down-indicator p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #009fe2;
+    animation: bounceText 2s infinite;
+  }
+  
+  .scroll-down-indicator .arrow-down {
+    display: block;
+    font-size: 2rem;
+    animation: bounceArrow 1.5s infinite;
+  }

@@ -1,0 +1,434 @@
+.case-studies-section {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .case-toggle-button {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
+    background-color: #009fe2;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .case-toggle-button:hover {
+    background-color: #302f2fa1;
+  }
+  
+  .case-dropdown {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .case-dropdown.hidden {
+    display: none;
+  }
+  
+  /* Scroll Container for Horizontal Cards */
+  .case-scroll-container {
+    overflow-x: auto;
+    padding: 20px 0;
+    max-width: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  .case-scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .case-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Row Layout for Scrollable Cards */
+  .case-scroll-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 10px 20px;
+  }
+  
+  .case-card {
+    flex: 0 0 auto;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .case-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .case-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  .case-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #000;
+  }
+  
+  /* Project Section */
+  
+  .project-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* ✅ 5 items per row */
+    gap: 50px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 300px;
+  }
+  
+  .project-card img {
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .project-panel {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .project-panel.hidden {
+    display: none;
+  }
+  
+  .project-panel-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-viewer {
+    position: relative;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .image-viewer img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: fill;
+    border-radius: 6px;
+  }
+  
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 10%;
+    height: auto;
+    width: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .nav-arrow.left {
+    left: -50px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .nav-arrow.right {
+    right: -50px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .nav-arrow:hover {
+    background-color: #009fe2;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 500px;
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .project-gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .project-gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .project-gallery-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .image-hero {
+    position: relative;
+    width: 110%;
+    bottom: 30px;
+    left: -5%;
+    height: 83vh;
+    background: url('../Images/AboutUsTitlePageIMG.svg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: #009fe2 0px 0px 20px 0px;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .image-overlay h1 {
+    font-size: 5rem;
+    margin-bottom: 0px;
+    color: rgb(0, 0, 0);
+
+  }
+  
+  .image-overlay p {
+    font-size: 1rem;
+    margin-bottom: 500px;
+    color: rgb(0, 0, 0);
+
+  }
+  
+    /* Footer */
+    .site-footer {
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 16px #009fe2;
+      text-align: center;
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .footer-link {
+      background: none;
+      border: none;
+      color: #0077cc;
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-link:hover {
+      color: #004f88;
+    }
+  
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social-icons img {
+      width: 26px;
+      height: 26px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+    
+    .info-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    
+    .info-panel.hidden {
+      display: none;
+    }
+    
+    .info-panel-content {
+      background: #fff;
+      padding: 40px;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      text-align: left;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    
+    .close-button {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 1.5rem;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .about-dropdown-section {
+        padding: 40px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .dropdown-item {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      
+      .dropdown-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 15px 20px;
+        background-color: #009fe2;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Fjalla One', sans-serif;
+        transition: background-color 0.3s ease;
+        position: relative;
+      }
+
+      .dropdown-title:hover {
+        background-color: #007bb5;
+      }
+      
+      .dropdown-content {
+        display: none;
+        padding: 10px 15px;
+        background: #f1f1f1;
+        border-radius: 0 0 8px 8px;
+        margin-bottom: 20px;
+        animation: fadeIn 0.3s ease-in-out;
+      }
+
+        .dropdown-title .title-text {
+        flex-grow: 1;
+        text-align: left;
+        }
+
+        .dropdown-title .arrow {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            margin-left: 700px;
+          }
+
+          .arrow {
+            color: white;
+          }
+
+          .about-overview {
+            max-width: 1000px;
+            margin: 60px auto 40px;
+            padding: 0 20px;
+            text-align: center;
+          }
+          
+          .about-overview h2 {
+            color: #009fe2;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+          }
+          
+          .about-overview p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #333;
+          }
+          
+  
+
