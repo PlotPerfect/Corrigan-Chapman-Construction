@@ -262,3 +262,71 @@
     background-color: #007bb8;
   }
   
+  /* Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+  .image-hero {
+    width: 100%;
+    left: 0;
+    height: 60vh;
+  }
+
+  .image-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .image-overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 100px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .vacancies-panel {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vacancies-info {
+    flex: 1 1 100%;
+  }
+
+  form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .social-icons img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .image-overlay p {
+    font-size: 0.8rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vacancies-panel {
+    padding: 20px;
+  }
+
+  form {
+    padding: 15px;
+  }
+}

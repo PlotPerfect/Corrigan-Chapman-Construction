@@ -242,3 +242,105 @@
     font-size: 2rem;
     animation: bounceArrow 1.5s infinite;
   }
+
+  /* Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+  .image-hero {
+    width: 100%;
+    left: 0;
+    height: 60vh;
+  }
+
+  .image-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .image-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+  }
+
+  .services-description {
+    padding: 30px 15px;
+  }
+
+  .services-description h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-list {
+    columns: 1;
+    column-gap: 20px;
+  }
+
+  .maintenance-section {
+    padding: 0 15px;
+  }
+
+  .maintenance-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .maintenance-section p {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .video-preview {
+    width: 90vw;
+    height: auto;
+    left: 0;
+    top: 110%;
+  }
+
+  .scroll-down-indicator p {
+    font-size: 1rem;
+  }
+
+  .scroll-down-indicator .arrow-down {
+    font-size: 1.8rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .social-icons img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .image-overlay p {
+    font-size: 1rem;
+    margin-bottom: 80px;
+  }
+
+  .services-description h2,
+  .maintenance-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .services-list p,
+  .maintenance-section p {
+    font-size: 0.95rem;
+  }
+
+  .scroll-down-indicator p {
+    font-size: 0.9rem;
+  }
+
+  .scroll-down-indicator .arrow-down {
+    font-size: 1.6rem;
+  }
+}
