@@ -478,9 +478,12 @@
   }
 
   .image-hero {
-    width: 100%;
-    left: 0;
-    height: 60vh;
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    margin: 0;
+    padding: 0;
+    margin-left: -15px;
   }
 
   .image-overlay h1 {
@@ -509,14 +512,56 @@
     font-size: 1rem;
   }
 
-  .footer-content {
-    flex-direction: column;
-    gap: 5px;
+  .site-footer {
+    padding: 20px 15px;
   }
 
-  .social-icons img {
-    width: 22px;
-    height: 22px;
+  .footer-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-social img{
+    height: 30px;
+    margin: 5px;
+  }
+
+  .footer-logos img {
+    height: 65px;
+    margin: -10px;
+  }
+  
+  .nav-button {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    background: #f4f4f400;
+    border-radius: 4px;
+  }
+
+  .nav-button:hover {
+    background-color: #009ee2;
+    color: #fff;
+  }
+
+  .logo {
+    height: 55px;
+  }
+
+  .info-panel-content {
+    padding: 20px;
+    width: 95%;
+    max-height: 55vh;
+    font-size: 0.95rem;
   }
 }
 
@@ -541,6 +586,13 @@
 
   .image-overlay p {
     font-size: 0.8rem;
+  }
+
+  .info-panel-content {
+    padding: 20px;
+    width: 95%;
+    max-height: 55vh;
+    font-size: 0.95rem;
   }
 }
 

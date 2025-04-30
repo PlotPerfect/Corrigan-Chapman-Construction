@@ -1,3 +1,4 @@
+
 // Menu Button Functionality 
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menuIcon');
@@ -24,6 +25,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Animate company description lines on scroll
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.4 // trigger when 40% of section is visible
+    });
+  
+    const companySection = document.querySelector('.company-description');
+    if (companySection) {
+      observer.observe(companySection);
+    }
+  });
+    
   function openPanel(id) {
     document.getElementById(id).classList.remove('hidden');
   }
@@ -31,3 +51,4 @@ document.addEventListener('DOMContentLoaded', () => {
   function closePanel(id) {
     document.getElementById(id).classList.add('hidden');
   }
+  

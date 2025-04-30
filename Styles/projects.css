@@ -465,28 +465,58 @@
   }
 
   .image-hero {
-    width: 100%;
-    left: 0;
-    height: 60vh;
+    object-fit: fill;
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    margin: 0;
+    padding: 0;
+    margin-left: -15px;
   }
 
   .image-overlay h1 {
-    font-size: 1.5rem;
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 610px;
   }
+  
 
   .image-overlay p {
-    font-size: 0.9rem;
-    margin-bottom: 100px;
+    display: none;
+  }
+
+  .site-footer {
+    padding: 20px 15px;
   }
 
   .footer-content {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     gap: 5px;
+    text-align: center;
   }
 
-  .social-icons img {
-    width: 22px;
-    height: 22px;
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-social img{
+    height: 30px;
+    margin: 5px;
+  }
+
+  .footer-logos img {
+    height: 65px;
+    margin: -10px;
+  }
+
+  .info-panel-content {
+    padding: 15px;
+    font-size: 0.9rem;
+    width: 95%;
+    max-height: 55vh;
   }
 }
 
@@ -522,10 +552,6 @@
     font-size: 0.85rem;
   }
 
-  .image-hero {
-    height: 50vh;
-  }
-
   .image-overlay h1 {
     font-size: 1.2rem;
   }
@@ -533,5 +559,12 @@
   .image-overlay p {
     font-size: 0.8rem;
     margin-bottom: 80px;
+  }
+
+  .info-panel-content {
+    padding: 15px;
+    font-size: 0.9rem;
+    width: 95%;
+    max-height: 55vh;
   }
 }
