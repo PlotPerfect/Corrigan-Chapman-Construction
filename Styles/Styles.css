@@ -125,19 +125,6 @@
   .footer-link:hover {
     text-decoration: underline;
   }
-
-  .footer-credit-link {
-  display: inline-block;
-  margin-top: 6px;
-  color: #000000;
-  text-decoration: underline;
-  transition: color 0.2s;
-  font-size: 0.95em;
-  }
-  .footer-credit-link:hover {
-  color: #009fe2;
-  text-shadow: 0 0 6px #1cff70bb;
-  }
   
   /* Bottom row for social and logos */
   .footer-bottom-row {
@@ -665,7 +652,14 @@
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    font-size: 10px;
     text-align: center;
+  }
+
+  .footer-link {
+    font-size: 0.55rem;
+    color: #009fe2;
+    text-decoration: none;
   }
 
   .footer-bottom-row {
@@ -761,11 +755,16 @@
   @media (max-width: 768px) {
     .footer-address {
       margin: 10px 0;
-      font-size: 0.98rem;
+      font-size: 0.6rem;
     }
     .footer-address address {
-      padding: 8px 10px;
+      padding: 8px 111px;
       font-size: 0.95rem;
+    }
+    .footer-logos img {
+      height: 75px;
+      margin: -5px;
+      margin-top: -100px;
     }
   }
 }
