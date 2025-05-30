@@ -243,6 +243,20 @@
     animation: bounceArrow 1.5s infinite;
   }
 
+  .footer-credit-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #000000;
+  text-decoration: underline;
+  transition: color 0.2s;
+  font-size: 0.95em;
+}
+.footer-credit-link:hover {
+  color: #009fe2;
+  text-shadow: 0 0 6px #1cff70bb;
+}
+
+
   /* Mobile Responsive Enhancements */
 @media (max-width: 768px) {
   .image-hero {
