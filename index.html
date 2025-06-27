@@ -19,6 +19,7 @@
   <meta name="twitter:title" content="Corrigan & Chapman Construction Ltd" />
   <meta name="twitter:description" content="Specialists in gym and leisure centre refurbishment across the UK. Delivering excellence in every project." />
   <meta name="twitter:image" content="https://www.corriganandchapman.co.uk/Images/twitter-image.jpg" />
+  <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://corriganandchapman.co.uk/index.html" />
   <script type="application/ld+json">
@@ -50,7 +51,7 @@
   <!-- Header -->
   <header class="site-header">
     <a href="index.html" class="logo-link">
-      <img src="Logos/C&CC Main Logo Light.svg" alt="Corrigan & Chapman Logo" class="logo" />
+      <img src="Logos/C&CC Main Logo Light.svg" alt="Corrigan & Chapman Construction Ltd company logo" class="logo" loading="lazy" />
     </a>
     <nav class="nav-menu">
       <a href="index.html" class="nav-button">Home</a>
@@ -84,7 +85,7 @@
   <!-- Main Content -->
   <main>
     <section class="video-hero">
-      <video autoplay muted loop playsinline class="hero-video">
+      <video autoplay muted loop playsinline class="hero-video" aria-label="Corrigan & Chapman Construction Ltd project showcase video">
         <source src="Videos/Design2.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -117,17 +118,17 @@
         <div class="testimonial-slider">
           <!-- Testimonial content will cycle through this -->
           <div class="testimonial active">
-            <p>"GLL have worked with Corrigan & Chapman over 10 years, and as GLL have grown as a company, Corrigan & Chapman have developed with us. Corrigan & Chapman can deal with all types of building repairs, refurbishments or challenges you have within your location. The scale of work varies from reactive issues to large scale refurbishments, all completed to a very high standard. A real can-do attitude to improve the service offered and a Partnership approach to ensure the best finish possible, within competitive pricing structures. They understand our business, our customers and are flexible in their approach to ensure as little disruption as possible."</p>
+            <blockquote>GLL have worked with Corrigan & Chapman over 10 years, and as GLL have grown as a company, Corrigan & Chapman have developed with us. Corrigan & Chapman can deal with all types of building repairs, refurbishments or challenges you have within your location. The scale of work varies from reactive issues to large scale refurbishments, all completed to a very high standard. A real can-do attitude to improve the service offered and a Partnership approach to ensure the best finish possible, within competitive pricing structures. They understand our business, our customers and are flexible in their approach to ensure as little disruption as possible.</blockquote>
             <h4>Matt Perren, Head of Service, Central - GLL</h4>
           </div>
       
           <div class="testimonial">
-            <p>"Jubilee Hall Trust has had a professional relationship with Corrigan & Chapman Construction Ltd for 10 years. Their creative ideas, knowledge, attention to detail, expertise and workmanship are excellent. Corrigan & Chapman are friendly and take a partnership approach, always working with us to achieve a finish of a very high standard. Their understanding of our business enables projects to be completed with minimal disruption and the finished product is always outstanding. They also have the ability to overcome complex issues, nothing is too much trouble. It is a pleasure working with them and we would definitely recommend them without reservation."</p>
+            <blockquote>Jubilee Hall Trust has had a professional relationship with Corrigan & Chapman Construction Ltd for 10 years. Their creative ideas, knowledge, attention to detail, expertise and workmanship are excellent. Corrigan & Chapman are friendly and take a partnership approach, always working with us to achieve a finish of a very high standard. Their understanding of our business enables projects to be completed with minimal disruption and the finished product is always outstanding. They also have the ability to overcome complex issues, nothing is too much trouble. It is a pleasure working with them and we would definitely recommend them without reservation.</blockquote>
             <h4>Jon Giles, Chief Operating Officer - Jubilee Hall Trust</h4>
           </div>
       
           <div class="testimonial">
-            <p>"Having worked with Corrigan and Chapman on a number of leisure projects what impressed me most was the professional and dedicated way they approached the projects right from the outset. Working within operational facilities is challenging but the projects were completed to a high standard whilst ensuring minimal disruption to the existing facilities. C&C work very hard to ensure the projects were completed on time and providing excellent service with efficient workers."</p>
+            <blockquote>Having worked with Corrigan and Chapman on a number of leisure projects what impressed me most was the professional and dedicated way they approached the projects right from the outset. Working within operational facilities is challenging but the projects were completed to a high standard whilst ensuring minimal disruption to the existing facilities. C&C work very hard to ensure the projects were completed on time and providing excellent service with efficient workers.</blockquote>
             <h4>Ian Connew, Director – Arkon Associates Ltd</h4>
           </div>
         </div>
@@ -137,6 +138,13 @@
         <button class="arrow right" onclick="changeTestimonial(1)">&#10095;</button>
       </section>
       
+      <nav class="internal-links" aria-label="Quick links" style="text-align:center; margin: 1.5em 0 1em 0; font-size:1.08em;">
+        <a href="aboutus.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">About Us</a> |
+        <a href="services.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Our Services</a> |
+        <a href="projects.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Our Projects</a> |
+        <a href="meettheteam.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Meet the Team</a> |
+        <a href="contactus.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Contact Us</a>
+      </nav>
 
   </main>
   
@@ -146,22 +154,22 @@
 <footer class="site-footer">
   <!-- Centered Text Content -->
   <div class="footer-content">
-    <button class="footer-link" onclick="openPanel('termsPanel')">T&C's</button>
+    <a href="#" class="footer-link" onclick="openPanel('termsPanel'); return false;" aria-label="View Terms and Conditions">T&C's</a>
     <span>|</span>
     <p>&copy; 2025 Corrigan & Chapman Construction Ltd. All rights reserved.</p>
     <span>|</span>
-    <button class="footer-link" onclick="openPanel('privacyPanel')">Privacy Policy</button>
+    <a href="#" class="footer-link" onclick="openPanel('privacyPanel'); return false;" aria-label="View Privacy Policy">Privacy Policy</a>
   </div>
 
   <!-- Flexible Footer Row: Social on Left, Logos on Right -->
   <div class="footer-bottom-row">
     <!-- Left: Social Icons -->
     <div class="footer-social">
-      <a href="https://www.linkedin.com/company/corrigan-chapman/about/" target="_blank">
-        <img src="Icons/LinkedInIcon.svg" alt="LinkedIn" />
+      <a href="https://www.linkedin.com/company/corrigan-chapman/about/" target="_blank" rel="noopener" aria-label="Corrigan & Chapman LinkedIn">
+        <img src="Icons/LinkedInIcon.svg" alt="Corrigan & Chapman LinkedIn" loading="lazy" />
       </a>
-      <a href="https://www.instagram.com/candcltd/" target="_blank">
-        <img src="Icons/InstagramIcon.svg" alt="Instagram" />
+      <a href="https://www.instagram.com/candcltd/" target="_blank" rel="noopener" aria-label="Corrigan & Chapman Instagram">
+        <img src="Icons/InstagramIcon.svg" alt="Corrigan & Chapman Instagram" loading="lazy" />
       </a>
     </div>
 
@@ -184,8 +192,8 @@
 
     <!-- Right: Additional Logos -->
     <div class="footer-logos">
-      <img src="Logos/AccLogo.svg" alt="Accreditation 1" />
-      <img src="Logos/AccAccred.svg" alt="Accreditation 2" />
+      <img src="Logos/AccLogo.svg" alt="Construction Industry Accreditation Logo" loading="lazy" />
+      <img src="Logos/AccAccred.svg" alt="Accredited Contractor Logo" loading="lazy" />
     </div>
   </div>
 </footer>

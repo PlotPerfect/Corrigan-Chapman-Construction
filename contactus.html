@@ -17,6 +17,7 @@
   <meta property="og:url" content="https://www.corriganandchapman.co.uk/contactus.html">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://corriganandchapman.co.uk/contactus.html" />
+  <meta name="robots" content="index, follow">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -47,7 +48,7 @@
   <!-- Header -->
   <header class="site-header">
     <a href="index.html" class="logo-link">
-      <img src="Logos/C&CC Main Logo Light.svg" alt="Corrigan & Chapman Logo" class="logo" />
+      <img src="Logos/C&CC Main Logo Light.svg" alt="Corrigan & Chapman Construction Ltd company logo" class="logo" loading="lazy" />
     </a>
     <nav class="nav-menu">
         <a href="index.html" class="nav-button">Home</a>
@@ -89,37 +90,38 @@
     </section>
 
     <section class="contact-info-section">
+      <h2>Contact Information</h2>
         <div class="contact-item">
-          <img src="Icons/EmailIcon.svg" alt="Email" class="contact-icon" />
+          <img src="Icons/EmailIcon.svg" alt="Email icon for Corrigan & Chapman Construction Ltd" class="contact-icon" loading="lazy" />
           <div class="contact-details">
             <h3>Email</h3>
-            <p><a href="mailto:info@corriganandchapman.co.uk">info@corriganandchapman.co.uk</a></p>
-            <img src="Icons/EmailQRCode.svg" alt="Email QR" class="qr-code" />
+            <p><a href="mailto:info@corriganandchapman.co.uk" style="color:#1a3c6b; text-decoration:underline; font-weight:500; font-size:1.08em;">info@corriganandchapman.co.uk</a></p>
+            <img src="Icons/EmailQRCode.svg" alt="QR code for Corrigan & Chapman Construction Ltd email address" class="qr-code" loading="lazy" />
           </div>
         </div>
       
         <div class="contact-item">
-          <img src="Icons/PhoneIcon.svg" alt="Phone" class="contact-icon" />
+          <img src="Icons/PhoneIcon.svg" alt="Phone icon for Corrigan & Chapman Construction Ltd" class="contact-icon" loading="lazy" />
           <div class="contact-details">
             <h3>Telephone</h3>
-            <p><a href="tel:01992815469">01992 815 469</a></p>
-            <img src="Icons/PhoneQRCode.svg" alt="Phone QR" class="qr-code" />
+            <p><a href="tel:01992815469" style="color:#1a3c6b; text-decoration:underline; font-weight:500; font-size:1.08em;">01992 815 469</a></p>
+            <img src="Icons/PhoneQRCode.svg" alt="QR code for Corrigan & Chapman Construction Ltd phone number" class="qr-code" loading="lazy" />
           </div>
         </div>
       
         <div class="contact-item">
-          <img src="Icons/AddressIcon.svg" alt="Address" class="contact-icon" />
+          <img src="Icons/AddressIcon.svg" alt="Address icon for Corrigan & Chapman Construction Ltd" class="contact-icon" loading="lazy" />
           <div class="contact-details">
             <h3>Address</h3>
-            <p>
-              <a href="https://www.google.com/maps/place/Unit+11A,+Hobbs+Cross+Business+Centre,+Theydon+Garnon,+CM16+7NY" target="_blank" rel="noopener noreferrer">
-            Unit 11A,<br>
-            Hobbs Cross Business Centre,<br>
-            Theydon Garnon,<br>
-            Essex,<br>
-            CM16 7NY
+            <address>
+              <a href="https://www.google.com/maps/place/Unit+11A,+Hobbs+Cross+Business+Centre,+Theydon+Garnon,+CM16+7NY" target="_blank" rel="noopener noreferrer" style="color:#1a3c6b; text-decoration:underline; font-weight:500; font-size:1.08em;">
+                Unit 11A,<br>
+                Hobbs Cross Business Centre,<br>
+                Theydon Garnon,<br>
+                Essex,<br>
+                CM16 7NY
               </a>
-            </p>
+            </address>
           </div>
         </div>
         
@@ -140,7 +142,13 @@
         </div>
       </section>
       
-      
+      <nav class="internal-links" aria-label="Quick links" style="text-align:center; margin: 1.5em 0 1em 0; font-size:1.08em;">
+        <a href="aboutus.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">About Us</a> |
+        <a href="services.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Our Services</a> |
+        <a href="projects.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Our Projects</a> |
+        <a href="meettheteam.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Meet the Team</a> |
+        <a href="contactus.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Contact Us</a>
+      </nav>
 
   </main>
   
@@ -149,22 +157,22 @@
 <footer class="site-footer">
   <!-- Centered Text Content -->
   <div class="footer-content">
-    <button class="footer-link" onclick="openPanel('termsPanel')">T&C's</button>
+    <a href="#" class="footer-link" onclick="openPanel('termsPanel'); return false;" aria-label="View Terms and Conditions">T&C's</a>
     <span>|</span>
     <p>&copy; 2025 Corrigan & Chapman Construction Ltd. All rights reserved.</p>
     <span>|</span>
-    <button class="footer-link" onclick="openPanel('privacyPanel')">Privacy Policy</button>
+    <a href="#" class="footer-link" onclick="openPanel('privacyPanel'); return false;" aria-label="View Privacy Policy">Privacy Policy</a>
   </div>
 
   <!-- Flexible Footer Row: Social on Left, Logos on Right -->
   <div class="footer-bottom-row">
     <!-- Left: Social Icons -->
     <div class="footer-social">
-      <a href="https://www.linkedin.com/company/corrigan-chapman/about/" target="_blank">
-        <img src="Icons/LinkedInIcon.svg" alt="LinkedIn" />
+      <a href="https://www.linkedin.com/company/corrigan-chapman/about/" target="_blank" rel="noopener" aria-label="Corrigan & Chapman LinkedIn">
+        <img src="Icons/LinkedInIcon.svg" alt="Corrigan & Chapman LinkedIn" loading="lazy" />
       </a>
-      <a href="https://www.instagram.com/candcltd/" target="_blank">
-        <img src="Icons/InstagramIcon.svg" alt="Instagram" />
+      <a href="https://www.instagram.com/candcltd/" target="_blank" rel="noopener" aria-label="Corrigan & Chapman Instagram">
+        <img src="Icons/InstagramIcon.svg" alt="Corrigan & Chapman Instagram" loading="lazy" />
       </a>
     </div>
 
@@ -187,8 +195,8 @@
 
     <!-- Right: Additional Logos -->
     <div class="footer-logos">
-      <img src="Logos/AccLogo.svg" alt="Accreditation 1" />
-      <img src="Logos/AccAccred.svg" alt="Accreditation 2" />
+      <img src="Logos/AccLogo.svg" alt="Construction Industry Accreditation Logo" loading="lazy" />
+      <img src="Logos/AccAccred.svg" alt="Accredited Contractor Logo" loading="lazy" />
     </div>
   </div>
 </footer>
@@ -323,6 +331,38 @@
   </div>
 </div>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can I contact Corrigan & Chapman Construction Ltd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact us via email at info@corriganandchapman.co.uk, by phone at 01992 815 469, or by visiting our office in Essex."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Corrigan & Chapman Construction Ltd located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our office is located at Unit 11A, Hobbs Cross Business Centre, Theydon Garnon, Essex, CM16 7NY."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer professional construction, maintenance, and refurbishment services for gym and leisure centre facilities across the UK."
+      }
+    }
+  ]
+}
+</script>
   <script src="JS/contactus.js"></script>
 </body>
 </html>
