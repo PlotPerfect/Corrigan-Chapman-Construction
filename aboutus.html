@@ -21,6 +21,7 @@
   <meta name="twitter:description" content="Learn about Corrigan & Chapman Construction Ltd's expertise in sports and leisure facility construction and refurbishment." />
   <meta name="twitter:image" content="https://www.corriganandchapman.co.uk/Images/AboutUsHero.jpg" />
   <link rel="canonical" href="https://corriganandchapman.co.uk/aboutus.html" />
+  <meta name="robots" content="index, follow">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -50,7 +51,7 @@
   <!-- Header -->
   <header class="site-header">
     <a href="index.html" class="logo-link">
-      <img src="Logos/C&CC Main Logo Light.svg" alt="Corrigan & Chapman Logo" class="logo" />
+      <img src="Logos/C&CC Main Logo Light.svg" alt="Corrigan & Chapman Construction Ltd company logo" class="logo" loading="lazy" />
     </a>
     <nav class="nav-menu">
         <a href="index.html" class="nav-button">Home</a>
@@ -108,7 +109,7 @@
           We plan, manage and carry out building works to minimise the impact on our client’s day-to-day operations.
         </p>
       </section>
-      
+
 
     <section class="about-dropdown-section">
         <div class="dropdown-item">
@@ -183,6 +184,13 @@
           </div>
                     
       </section>   
+        <nav class="internal-links" aria-label="Quick links" style="text-align:center; margin: 1.5em 0 1em 0; font-size:1.08em;">
+        <a href="aboutus.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">About Corrigan & Chapman</a> |
+        <a href="services.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Our Services</a> |
+        <a href="projects.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Project Portfolio</a> |
+        <a href="meettheteam.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Meet the Team</a> |
+        <a href="contactus.html" style="color:#1a3c6b; text-decoration:underline; margin:0 0.5em; font-weight:500;">Contact Details</a>
+      </nav>
   </main>
   
 
@@ -191,22 +199,22 @@
 <footer class="site-footer">
   <!-- Centered Text Content -->
   <div class="footer-content">
-    <button class="footer-link" onclick="openPanel('termsPanel')">T&C's</button>
+    <a href="#" class="footer-link" onclick="openPanel('termsPanel'); return false;" aria-label="View Terms and Conditions">T&C's</a>
     <span>|</span>
     <p>&copy; 2025 Corrigan & Chapman Construction Ltd. All rights reserved.</p>
     <span>|</span>
-    <button class="footer-link" onclick="openPanel('privacyPanel')">Privacy Policy</button>
+    <a href="#" class="footer-link" onclick="openPanel('privacyPanel'); return false;" aria-label="View Privacy Policy">Privacy Policy</a>
   </div>
 
   <!-- Flexible Footer Row: Social on Left, Logos on Right -->
   <div class="footer-bottom-row">
     <!-- Left: Social Icons -->
     <div class="footer-social">
-      <a href="https://www.linkedin.com/company/corrigan-chapman/about/" target="_blank">
-        <img src="Icons/LinkedInIcon.svg" alt="LinkedIn" />
+      <a href="https://www.linkedin.com/company/corrigan-chapman/about/" target="_blank" rel="noopener" aria-label="Corrigan & Chapman LinkedIn">
+        <img src="Icons/LinkedInIcon.svg" alt="Corrigan & Chapman LinkedIn" loading="lazy" />
       </a>
-      <a href="https://www.instagram.com/candcltd/" target="_blank">
-        <img src="Icons/InstagramIcon.svg" alt="Instagram" />
+      <a href="https://www.instagram.com/candcltd/" target="_blank" rel="noopener" aria-label="Corrigan & Chapman Instagram">
+        <img src="Icons/InstagramIcon.svg" alt="Corrigan & Chapman Instagram" loading="lazy" />
       </a>
     </div>
 
@@ -229,8 +237,8 @@
 
     <!-- Right: Additional Logos -->
     <div class="footer-logos">
-      <img src="Logos/AccLogo.svg" alt="Accreditation 1" />
-      <img src="Logos/AccAccred.svg" alt="Accreditation 2" />
+      <img src="Logos/AccLogo.svg" alt="Construction Industry Accreditation Logo" loading="lazy" />
+      <img src="Logos/AccAccred.svg" alt="Accredited Contractor Logo" loading="lazy" />
     </div>
   </div>
 </footer>
@@ -364,6 +372,38 @@
     </address>
   </div>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does Corrigan & Chapman Construction Ltd do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We specialize in the design, refurbishment, and maintenance of sports and leisure facilities across the UK."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long has Corrigan & Chapman Construction Ltd been in business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We were established in 2006 and incorporated in 2008, with decades of experience in the industry."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I contact Corrigan & Chapman Construction Ltd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact us via our contact page, email info@corriganandchapman.co.uk, or by phone."
+      }
+    }
+  ]
+}
+</script>
     <script src="JS/AboutUs.js"></script>
 </body>
 </html>

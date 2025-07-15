@@ -3,37 +3,37 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.corriganandchapman.co.uk/</loc>
+    <loc>https://corriganandchapman.co.uk/index.html</loc>
     <priority>1.00</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.corriganandchapman.co.uk/aboutus.html</loc>
+    <loc>https://corriganandchapman.co.uk/aboutus.html</loc>
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.corriganandchapman.co.uk/services.html</loc>
+    <loc>https://corriganandchapman.co.uk/services.html</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.corriganandchapman.co.uk/projects.html</loc>
+    <loc>https://corriganandchapman.co.uk/projects.html</loc>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.corriganandchapman.co.uk/meettheteam.html</loc>
+    <loc>https://corriganandchapman.co.uk/meettheteam.html</loc>
     <priority>0.75</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://www.corriganandchapman.co.uk/contactus.html</loc>
+    <loc>https://corriganandchapman.co.uk/contactus.html</loc>
     <priority>0.90</priority>
     <changefreq>monthly</changefreq>
   </url>
